@@ -1,0 +1,40 @@
+<!-- https://youtu.be/ZTQcJWixB1k -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX vs Jquery vs Fetch vs Async/Await</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>AJAX vs Jquery vs Fetch vs Async/Await</h1>
+  <p><strong>User </strong>
+    <span id="user"></span>
+  </p>
+  <p><strong>Display name </strong>
+    <span id="displayName"></span>
+  </p>
+  <p><strong>Online </strong>
+    <span id="status"></span>
+  </p>
+  
+  <script>
+    const user = document.getElementById("user");
+    const displayName = document.getElementById("displayName");
+    const status = document.getElementById("status");
+    
+    const displayInformations = (datas) => {
+      user.innerText = datas.username;
+      displayName.innerText = datas.displayName
+      status.innerText = datas.online
+    }
+  </script>
+
+    <script src="ajax.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <!-- <script src="fetch.js"></script> -->
+    <!-- <script src="async_await.js"></script> -->
+</body>
+</html>
